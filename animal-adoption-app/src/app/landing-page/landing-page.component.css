@@ -1,0 +1,8 @@
+
+#landing-dogs {
+  display:flexbox;
+  background: linear-gradient(to bottom right, red, blue);
+  cursor:pointer;
+  margin: auto;
+  padding: -100px;
+}
