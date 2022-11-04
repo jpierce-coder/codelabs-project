@@ -8,6 +8,7 @@ import { PetManagerComponent } from './pet-manager/pet-manager.component';
 import { AddPetComponent } from './add-pet/add-pet.component';
 import { EditPetComponent } from './edit-pet/edit-pet.component';
 import { ViewPetComponent } from './view-pet/view-pet.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ViewPetComponent } from './view-pet/view-pet.component';
     PetManagerComponent,
     AddPetComponent,
     EditPetComponent,
-    ViewPetComponent
+    ViewPetComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
