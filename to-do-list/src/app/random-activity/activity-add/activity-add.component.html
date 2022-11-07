@@ -1,1 +1,30 @@
-<p>activity-add works!</p>
+<form>
+  <fieldset>
+    <legend>Random Activity Generator</legend>
+
+    <div class="mb-3">
+      <label for="typeSelect" class="form-label">Type of Activity</label>
+      <select id="typeSelect" class="form-select">
+        <option>Education</option>
+        <option>Recreational</option>
+        <option>Social</option>
+        <option>DIY</option>
+        <option>Charity</option>
+        <option>Cooking</option>
+        <option>Relaxation</option>
+        <option>Music</option>
+        <option>Busywork</option>
+        <option>Random</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <label class="form-number-label" for="numOfParticipants" style="margin-right: 10px;">
+          Number of Participants (1 to 10):
+        </label>
+        <input type="number" class="form-number-input" value="1" min="1" max="10" id="numOfParticipants">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </fieldset>
+</form>
