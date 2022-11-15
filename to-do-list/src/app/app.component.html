@@ -1,10 +1,10 @@
-<app-header></app-header>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
 
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-todos></app-todos>
-      <app-random-activity></app-random-activity>
+      <app-todos *ngIf="loadedFeature === 'home'"></app-todos>
+      <app-random-activity *ngIf="loadedFeature !== 'home'"></app-random-activity>
     </div>
   </div>
 </div>
