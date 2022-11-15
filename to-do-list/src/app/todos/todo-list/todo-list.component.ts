@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Todo } from '../todo.model';
 
 @Component({
@@ -7,6 +7,9 @@ import { Todo } from '../todo.model';
   styleUrls: ['./todo-list.component.css'],
 })
 export class TodoListComponent implements OnInit {
+
+  @Output() todoWasSelected = new EventEmitter<Todo>();
+
   todos: Todo[] = [
     new Todo('Test ToDo', 'This is a test ToDo', '04/01/2023', 'John P'),
     new Todo(
@@ -20,4 +23,9 @@ export class TodoListComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  onTodoSelected(todo: Todo) {
+    this.todoWasSelected.emit(todo);
+  }
+
 }
